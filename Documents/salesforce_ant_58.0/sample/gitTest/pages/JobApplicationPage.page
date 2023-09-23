@@ -1,0 +1,14 @@
+<apex:page controller="JobApplicationController">
+    <apex:form enctype="multipart/form-data">
+        <apex:pageMessages />
+
+        <apex:pageBlock title="Job Application Form">
+            <apex:pageBlockSection >
+                <apex:inputText value="{!jobApplication.Name}" label="Name" required="true"/>
+             
+
+                <apex:commandButton action="{!submitApplication}" value="Submit Application"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
