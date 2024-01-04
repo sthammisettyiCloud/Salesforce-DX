@@ -1,0 +1,209 @@
+Salesforce.com 
+
+CRM services -- Cloud Platform -- Force.com
+
+Cloud Computing -- Browser based app/software/application development 
+
+
+Apex, 
+Visualforce
+Lightning Components/Aura 
+LWC
+
+Sandbox, -- test.salesforce.com 
+ Production. -- login.salesforce.com
+
+
+Developer Ed.(login.salesforce.com) -- Free of Access | Personal Certification/Training  
+
+Professional Ed
+Enterprise Ed
+Unlimited Ed
+
+Modes:
+  Lightning Experience
+  Salesforce Classic
+
+
+Point & Click Development -- Flow Builder, 
+Program based Development 
+
+SOQL - Salesforce Object Query Language
+DML - Data Manipulation Language
+
+
+
+CRM - Customer Relationship Management 
+=======================================
+
+Account    - Customer (Person/Company)
+Contact    - Representatives of Account
+Lead       - Person who interested in purchasing the products from the Company.
+Campaign.  - Marketing strategy to bring new customers to the company.
+Case       - Complaint raised by Contact about Product 
+Opportunity- Started gaining profits.
+Solution.  - Knowledge Articles 
+Product    - Services
+
+
+Login to Salesforce: 
+--------------------
+Production - Main Org (Live Users/Endusers + Actual Data)
+Sandbox - Replica of Production (For Development purpose + No data/Partial data)
+
+Force.com Platform:-
+--------------------
+
+
+App Development on Force.com:-
+------------------------------
+
+Proxy Login in Salesforce - Users with Salesforce Admin profile can proxy login as other users.
+
+
+Uploading Image/CSS files/Documents into Salesforce Documents folder:
+---------------------------------------------------------------------
+Goto Documents tab 
+New >> Upload file from PC.
+Mark that as Externally Available Image
+
+
+Salesforce Chatter Feed:- Fb/Twitter for Salesforce 
+
+Apps:-
+------
+Global Economic Summit - 2022  -- LX
+BRICK Summit - 2023
+G20 - 2023
+
+
+Object Creation - Database Table
+
+1.App >> 3.Object Tab >> 2.Object >> 2.1)Record (in the Listviews) >> (Fields)Data.
+
+Customer calls the CC# >> Agent (CRM App) 
+
+Object: Database table 
+Standard Object - OOTB Object. API name of Standard Object is almost same like label name.
+        Account - Account
+        Contact - Contact
+        Person Account - PersonAccount
+
+Custom Object  - User defined object 
+        Student - Student__c.  (__c means custom)
+        Olympic Game - Olympic_Game__c
+
+Object Tab title will be given at the time of Object creation.(Plural Label)
+At the time Object tab creation, we only select Object, Tab style and Tab visibility settings.
+
+Record Name = This is one of the 4 standard fields of Object, which automatically added to the Object's record form.
+   Field Title --
+   Datatype:
+      Auto-Number --> Sequence number generation for records created.
+      Text        --> User can't skip this value.
+Owner 
+Created By
+Last Modified By
+
+Label - Allows duplicate names,
+        Character spaces
+
+API Name/Developer Name/Object Name
+      - Doesn't allow duplicate names
+      - Spaces not allows
+
+
+I want to create Book records from Service Console app.
+While creating Book record, I need to capture following details of the Book.
+
+title, 
+author, - Required
+publication date, (Should not be a future date)
+genre, 
+ISBN, 
+page count
+cover image
+
+
+Custom Fields - Field Types 
+
+Field Types:
+>> Text   - Text, TextArea, TextArea(Long), TextArea(Rich), Text(Encrypted)
+>> Numeric - Number, Percentage, Currency
+>> Formatted - Email, Phone, URL, Geolocation
+>> Relationship - Lookup, Master-Details, External Lookup
+>> Calculation - Formula, Rollup Summary, Auto-Number
+>> Calendar - Date, DateTime, Time
+>> Limited Options - Picklist, Multi-Select Picklist, Checkbox
+
+
+
+Field Properties:
+-----------------
+Label - Title that appears on the UI/Record form.
+Name - Developer Name/API name of the field, for Apex programming.
+Required - Mandates entering the value in the field while creating/updating record.
+Unique - Throws error message if the value that entered is already saved in another record.
+External Id - Field with External ID enabled helps checking records and avoid duplicate data import.
+
+Field Visibility - Editable/ReadOnly/Hidden
+
+Visible.   ReadOnly 
+  Yes        No           Editable
+  No         -            Hidden
+  Yes        Yes          Readonly
+
+If (Gender = male),
+  Name = MR.Name
+
+If (Gender = female), Name = Ms.Name
+
+
+
+public String callMe(){
+
+   return 'Hi';
+}
+
+
+String num = '768'; // 'hello'
+
+Number num2 =Value(num); // 768
+
+
+Value() - Retrieves number from number in String form.
+
+
+Country - State(State Revenue)
+
+
+India - 28, Sum of State Revenue
+US - 32
+Japan - 6
+
+
+
+Field Dependencies 
+Validation Rules
+
+Layout Management	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
